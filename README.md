@@ -1,7 +1,22 @@
-# Racecar Docker
+| Deliverable | Due Date              |
+|---------------|----------------------------------------------------------------------------|
+| Base Installation (nothing to submit)  | Wednesday, February 5th at 1:00PM EST |
+| Intro to Linux [Gradescope Submission](https://www.gradescope.com/courses/728544/assignments/4053193)  | Monday, February 10th at 1:00PM EST |
+| Intro to Git [Gradescope Submission](https://www.gradescope.com/courses/728544/assignments/4053367)  | Monday, February 10th at 1:00PM EST |
 
-This code defines a docker image to interface with the MIT Racecar.
-The image is built from a Debian base, includes the latest version of ROS, and the [racecar simulator](https://github.com/mit-racecar/racecar_simulator). It can be interfaced through a terminal or graphically through a browser.
+# Docker, Linux, and Git
+
+## Introduction
+
+Welcome to RSS! In this lab, we will set up the MIT Racecar Docker image which we will use throughout this class, and get familiar with Linux and Git, which are essential tools for working in robotics.
+
+## Instructions
+
+This lab is split into 3 parts:
+
+- **Base Installation:** Installing and setting up the MIT Racecar Docker image in this repository is essential for this class, and is a prerequisite to completing the subsequent sections of this lab.
+- **[Lab 1A](https://github.com/mit-rss/intro_to_linux/tree/master):** Introduction to Linux, as it is the operating system we will be using in the docker container and on the racecars.
+- **[Lab 1B](https://github.com/mit-rss/intro_to_git/tree/master):** Introduction to Git for version control and working on code as a team.
 
 ## Installation
 
@@ -11,7 +26,8 @@ First install `git` and Docker according to your OS:
 - Windows: [Install git](https://git-scm.com/download/win) and then [install and launch Docker Desktop](https://docs.docker.com/desktop/windows/install/).
 - Linux: Make sure you have [git installed](https://git-scm.com/download/linux) and then [install Docker Engine for your distro](https://docs.docker.com/engine/install/#server) and install [Docker Compose V2](https://docs.docker.com/compose/cli-command/#install-on-linux).
 
-Once everything is installed and running, if you're on macOS or Linux open a terminal and if you're on Windows open a PowerShell. Then clone and pull the image (NOTE: If using a Mac, after cloning the repository, you must go into the docker compose yaml file and change the image from "sebagarc/racecar2", to "sebagarc/racecarmac"):
+Once everything is installed and running, if you're on macOS or Linux open a terminal and if you're on Windows open a PowerShell. Then clone and pull the image:
+>**IMPORTANT NOTE:** If you are using a Mac with Apple silicon, after cloning the repository, you must go into the docker compose yaml file and change the image from "sebagarc/racecar2", to "sebagarc/racecarmac")
 
     git clone https://github.com/mit-racecar/racecar_docker.git
     cd racecar_docker
@@ -54,7 +70,7 @@ You're in!
 
 ## Shutting Down
 
-To stop the image, run:
+To stop the image, run the following in your `racecar_docker` directory:
 
     docker compose down
 
@@ -69,28 +85,3 @@ The only changes you will ever need to make for your labs will be in your home f
 
 - In the graphical interface, you can move windows around by holding <kbd>Alt</kbd> or <kbd>Command</kbd> (depending on your OS) then clicking and dragging *anywhere* on a window. Use this to recover your windows if the title bar at the top of a window goes off screen.
 - You can't copy and paste into the graphical interface but you can copy and paste into a terminal interface, opened by running `docker compose exec racecar bash`. You can also edit files that are in the shared `home` directory using an editor on your host OS.
-
-
-## Connecting to a physical racecar
-
-(To be changed and edited. Coming soon!
-)
-To connect your docker image to a ROS master running on a physical racecar, open the `docker-compose.yml` and change the `racecar` hostname under the `extra_hosts` field from `127.0.0.1` to your car's IP. For example, for car number 100 you would put:
-
-    extra_hosts:
-      racecar: 192.168.1.100
-
-Then restart the docker image. This does not require the image to be rebuilt. You should be able to `ssh` into your racecar by simply typing:
-
-    ssh racecar
-
-If you publish to topics on the racecar you should be able to print them via `ros2 topic echo <topic name>` or visualize them in RViz on your docker image.
-
-
-## Custom Builds
-
-If you want to change the docker image and rebuild locally, all you need to do is add a `--build` flag:
-
-    docker compose up --build
-
-
