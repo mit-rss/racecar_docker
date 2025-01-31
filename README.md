@@ -6,6 +6,18 @@
 
 # Docker, Linux, and Git
 
+## Table of Contents
+
+* [Introduction](https://github.com/mit-rss/racecar_docker#introduction)
+* [Instructions](https://github.com/mit-rss/racecar_docker#instructions)
+* [Installation](https://github.com/mit-rss/racecar_docker#installation)
+* [Using the Docker Container](https://github.com/mit-rss/racecar_docker#using-the-docker-container)
+    * [Starting Up](https://github.com/mit-rss/racecar_docker#starting-up)
+    * [Example Usage](https://github.com/mit-rss/racecar_docker#example-usage)
+    * [Shutting Down](https://github.com/mit-rss/racecar_docker#shutting-down)
+    * [Local Storage](https://github.com/mit-rss/racecar_docker#local-storage)
+    * [Tips](https://github.com/mit-rss/racecar_docker#tips)
+
 ## Introduction
 
 Welcome to RSS! In this lab, we will set up the MIT Racecar Docker image which we will use throughout this class, and get familiar with Linux and Git, which are essential tools for working in robotics.
@@ -35,7 +47,9 @@ Once everything is installed and running, if you're on macOS or Linux open a ter
 
 Linux users may need to use `sudo` to run `docker compose`. The image is about 1GB compressed so this can take a couple minutes. Fortunately, you only need to do it once.
 
-## Starting Up
+## Using the Docker Container
+
+### Starting Up
 
 Once the image is pulled you can start it by running the following in your `racecar_docker` directory:
 
@@ -44,7 +58,7 @@ Once the image is pulled you can start it by running the following in your `race
 Follow the instructions in the command prompt to connect via either a terminal or your browser.
 If you're using the browser interface, click "Connect" then right click anywhere on the black background to launch a terminal.
 
-## Example Usage
+### Example Usage
 
 First, connect via the graphical interfacce, right click on the background and select `RViz`. Note: Rviz can also be launched by typing 'rviz2' in the terminal. 
 
@@ -68,7 +82,7 @@ Once the software is installed, run
 
 You're in!
 
-## Shutting Down
+### Shutting Down
 
 To stop the image, run the following in your `racecar_docker` directory:
 
@@ -76,12 +90,12 @@ To stop the image, run the following in your `racecar_docker` directory:
 
 If you try to rerun `docker compose up` without first running `docker compose down` the image may not launch properly.
 
-## Local Storage
+### Local Storage
 
 Any changes made to the your home folder in the docker image (`/home/racecar`) will be saved to the `racecar_docker/home` directory your local machine but **ANY OTHER CHANGES WILL BE DELETED WHEN YOU RESTART THE DOCKER IMAGE**.
 The only changes you will ever need to make for your labs will be in your home folder, so ideally this should never be a problem --- *just be careful* not to keep any important files outside of that folder.
 
-## Tips
+### Tips
 
 - In the graphical interface, you can move windows around by holding <kbd>Alt</kbd> or <kbd>Command</kbd> (depending on your OS) then clicking and dragging *anywhere* on a window. Use this to recover your windows if the title bar at the top of a window goes off screen.
 - You can't copy and paste into the graphical interface but you can copy and paste into a terminal interface, opened by running `docker compose exec racecar bash`. You can also edit files that are in the shared `home` directory using an editor on your host OS.
