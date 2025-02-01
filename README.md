@@ -10,6 +10,7 @@
 
 * [Introduction](https://github.com/mit-rss/racecar_docker#introduction)
 * [Instructions](https://github.com/mit-rss/racecar_docker#instructions)
+* [Grading](https://github.com/mit-rss/racecar_docker#grading)
 * [Installation](https://github.com/mit-rss/racecar_docker#installation)
 * [Using the Docker Container](https://github.com/mit-rss/racecar_docker#using-the-docker-container)
     * [Starting Up](https://github.com/mit-rss/racecar_docker#starting-up)
@@ -31,6 +32,18 @@ This lab is split into 3 parts:
 - **[Lab 1B](https://github.com/mit-rss/intro_to_git/tree/master):** Introduction to Git for version control and working on code as a team.
 
 We will also have a **TA check-in** on Monday, February 10th during lab time. This is not graded; the purpose is to make sure you're all set up for future labs and have a solid understanding of Linux and Git.
+
+## Grading
+
+| Problem | Weight (total: 6.0)             |
+|---------------|----------------------------------------------------------------------------|
+| Intro to Linux Q1 | 0.5 |
+| Intro to Linux Q2 | 0.6 |
+| Intro to Linux Q3 | 0.4 |
+| Intro to Linux Q4 | 1.5 |
+| Intro to Git Q1 | 1.0 |
+| Intro to Git Q2 | 1.2 |
+| Intro to Git Q3 | 0.8 |
 
 ## Installation
 
