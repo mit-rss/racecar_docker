@@ -4,7 +4,7 @@
 | Intro to Linux [Gradescope Submission](https://www.gradescope.com/courses/728544/assignments/4053193)  | Monday, February 10th at 1:00PM EST |
 | Intro to Git [Gradescope Submission](https://www.gradescope.com/courses/728544/assignments/4053367)  | Monday, February 10th at 1:00PM EST |
 
-# Docker, Linux, and Git
+# Intro to RSS
 
 ## Table of Contents
 
