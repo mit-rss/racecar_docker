@@ -30,6 +30,8 @@ This lab is split into 3 parts:
 - **[Lab 1A](https://github.com/mit-rss/intro_to_linux/tree/master):** Introduction to Linux, as it is the operating system we will be using in the docker container and on the racecars.
 - **[Lab 1B](https://github.com/mit-rss/intro_to_git/tree/master):** Introduction to Git for version control and working on code as a team.
 
+We will also have a **TA check-in** on Monday, February 10th during lab time. This is not graded; the purpose is to make sure you're all set up for future labs and have a solid understanding of Linux and Git.
+
 ## Installation
 
 First install `git` and Docker according to your OS:
