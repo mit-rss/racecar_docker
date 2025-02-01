@@ -26,7 +26,7 @@ Welcome to RSS! In this lab, we will set up the MIT Racecar Docker image which w
 
 This lab is split into 3 parts:
 
-- **Base Installation:** Installing and setting up the MIT Racecar Docker image in this repository is essential for this class, and is a prerequisite to completing the subsequent sections of this lab.
+- **Base Installation:** Go through the [Installation](https://github.com/mit-rss/racecar_docker#installation) and [Using the Docker Container](https://github.com/mit-rss/racecar_docker#using-the-docker-container) sections of this README. Setting up the MIT Racecar Docker image is essential for this class, and is a prerequisite to completing the subsequent sections of this lab.
 - **[Lab 1A](https://github.com/mit-rss/intro_to_linux/tree/master):** Introduction to Linux, as it is the operating system we will be using in the docker container and on the racecars.
 - **[Lab 1B](https://github.com/mit-rss/intro_to_git/tree/master):** Introduction to Git for version control and working on code as a team.
 
@@ -60,7 +60,7 @@ If you're using the browser interface, click "Connect" then right click anywhere
 
 ### Example Usage
 
-First, connect via the graphical interfacce, right click on the background and select `RViz`. Note: Rviz can also be launched by typing 'rviz2' in the terminal. 
+First, connect via the graphical interface, right click on the background and select `RViz`. Note: Rviz can also be launched by typing `rviz2` in the terminal. 
 
 Next, right click on the background and select `Terminal`, then enter:
 
