@@ -101,7 +101,7 @@ You're in!
 
 ### Shutting Down
 
-To stop the image, run the following in your `racecar_docker` directory:
+To stop the image, run the following in your `racecar_docker` directory **outside of your docker container**:
 
     docker compose down
 
