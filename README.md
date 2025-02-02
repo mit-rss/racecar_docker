@@ -1,15 +1,15 @@
 | Deliverable | Due Date              |
 |---------------|----------------------------------------------------------------------------|
 | Base Installation (nothing to submit)  | Wednesday, February 5th at 1:00PM EST |
-| Intro to Linux [Gradescope Submission](https://www.gradescope.com/courses/728544/assignments/4053193)  | Monday, February 10th at 1:00PM EST |
-| Intro to Git [Gradescope Submission](https://www.gradescope.com/courses/728544/assignments/4053367)  | Monday, February 10th at 1:00PM EST |
+| Intro to Linux [Gradescope Submission](https://www.gradescope.com/courses/973988/assignments/5710353)  | Monday, February 10th at 1:00PM EST |
+| Intro to Git [Gradescope Submission](https://www.gradescope.com/courses/973988/assignments/5710354)  | Monday, February 10th at 1:00PM EST |
 
 # Intro to RSS
 
 ## Table of Contents
 
 * [Introduction](https://github.com/mit-rss/racecar_docker#introduction)
-* [Instructions](https://github.com/mit-rss/racecar_docker#instructions)
+* [Lab Overview](https://github.com/mit-rss/racecar_docker#lab-overview)
 * [Grading](https://github.com/mit-rss/racecar_docker#grading)
 * [Installation](https://github.com/mit-rss/racecar_docker#installation)
 * [Using the Docker Container](https://github.com/mit-rss/racecar_docker#using-the-docker-container)
@@ -18,12 +18,14 @@
     * [Shutting Down](https://github.com/mit-rss/racecar_docker#shutting-down)
     * [Local Storage](https://github.com/mit-rss/racecar_docker#local-storage)
     * [Tips](https://github.com/mit-rss/racecar_docker#tips)
+ * [Lab 1A: Intro to Linux](https://github.com/mit-rss/intro_to_linux/tree/master)
+ * [Lab 1B: Intro to Git](https://github.com/mit-rss/intro_to_git/tree/master)
 
 ## Introduction
 
 Welcome to RSS! In this lab, we will set up the MIT Racecar Docker image which we will use throughout this class, and get familiar with Linux and Git, which are essential tools for working in robotics.
 
-## Instructions
+## Lab Overview
 
 This lab is split into 3 parts:
 
@@ -37,13 +39,13 @@ We will also have a **TA check-in** on Monday, February 10th during lab time. Th
 
 | Problem | Weight (total: 6.0)             |
 |---------------|----------------------------------------------------------------------------|
-| Intro to Linux Q1 | 0.5 |
-| Intro to Linux Q2 | 0.6 |
-| Intro to Linux Q3 | 0.4 |
-| Intro to Linux Q4 | 1.5 |
-| Intro to Git Q1 | 1.0 |
-| Intro to Git Q2 | 1.2 |
-| Intro to Git Q3 | 0.8 |
+| Intro to Linux Problem 1 | 0.5 |
+| Intro to Linux Problem 2 | 0.6 |
+| Intro to Linux Problem 3 | 0.4 |
+| Intro to Linux Problem 4 | 1.5 |
+| Intro to Git Problem 1 | 1.0 |
+| Intro to Git Problem 2 | 1.2 |
+| Intro to Git Problem 3 | 0.8 |
 
 ## Installation
 
