@@ -51,7 +51,7 @@ We will also have a **TA check-in** on Monday, February 10th during lab time. Th
 
 First install `git` and Docker according to your OS:
 
-- macOS: Make sure command line tools are installed by running `xcode-select --install` in a terminal and then [install and launch Docker Desktop](https://docs.docker.com/desktop/mac/install/). Open your [Docker preferences](https://docs.docker.com/desktop/mac/#preferences) and make sure Docker Compose V2 is enabled.
+- macOS: Make sure command line tools are installed by running `xcode-select --install` in a terminal and then [install and launch Docker Desktop](https://docs.docker.com/desktop/mac/install/). Open your [Docker preferences](https://docs.docker.com/desktop/mac/#preferences) and make sure Docker Compose V2 is enabled. If you cannot see an option for Docker Compose V2, it's most likely automatically installed.
 - Windows: [Install git](https://git-scm.com/download/win) and then [install and launch Docker Desktop](https://docs.docker.com/desktop/windows/install/).
 - Linux: Make sure you have [git installed](https://git-scm.com/download/linux) and then [install Docker Engine for your distro](https://docs.docker.com/engine/install/#server) and install [Docker Compose V2](https://docs.docker.com/compose/cli-command/#install-on-linux).
 
