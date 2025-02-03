@@ -105,7 +105,7 @@ To stop the image, run the following in your `racecar_docker` directory **outsid
 
     docker compose down
 
-If you try to rerun `docker compose up` without first running `docker compose down` the image may not launch properly.
+**Don't use** `Ctrl+c` **to stop the docker container!** Always use the `docker compose down` command. If you try to rerun `docker compose up` without first running `docker compose down` the image may not launch properly.
 
 ### Local Storage
 
