@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Start the window manager
-openbox > $HOME/.log/openbox.log 2>&1 &
+openbox > $HOME/.log/openbox.log 2>&1
 
 # Merge in Xresources
 xrdb -merge $HOME/.Xresources

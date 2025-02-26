@@ -1,10 +1,10 @@
 # Start from ubuntu
-FROM ubuntu:focal
+FROM ubuntu:jammy
 
 # Update so we can download packages
 RUN apt-get update && apt-get upgrade -y
 #Set the ROS distro
-ENV ROS_DISTRO foxy
+ENV ROS_DISTRO humble
 ARG DEBIAN_FRONTEND=noninteractive
 
 
@@ -93,7 +93,7 @@ RUN apt update && apt install -y \
     ros-$ROS_DISTRO-xacro \
     ros-$ROS_DISTRO-joy \
     build-essential \
-    cython
+    cython3
 
 
 # Install some cool programs
@@ -119,9 +119,7 @@ RUN apt update && apt install -y \
 
 
 # install additional ros things
-RUN apt-get update && pip install transforms3d \
-    pip install imutils \
-    pip install opencv-contrib-python
+RUN apt-get update && pip install transforms3d && pip install opencv-contrib-python
 
 
 
@@ -137,6 +135,7 @@ COPY ./xstartup.sh /usr/bin/xstartup.sh
 
 # Create racecar_ws directory and src before switching to USER
 ENV SIM_WS /home/sim_ws
+RUN apt update
 RUN mkdir -p $SIM_WS/src && cd $SIM_WS/src && git clone https://github.com/Sebastian-Garcia/racecar_simulator.git
 RUN /bin/bash -c 'source /opt/ros/$ROS_DISTRO/setup.bash; cd $SIM_WS; colcon build;'
 
@@ -157,7 +156,8 @@ RUN usermod -aG sudo racecar
 USER racecar
 WORKDIR /home/racecar
 
-
+COPY ./entrypoint.sh /usr/bin/entrypoint.sh
+COPY ./xstartup.sh /usr/bin/xstartup.sh
 
 
 
