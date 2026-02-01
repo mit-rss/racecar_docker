@@ -14,7 +14,7 @@ RUN apt update && \
 		curl wget gnupg2 lsb-release ca-certificates console-setup \
         python3 python3-pip python3-setuptools locales \
         git unzip build-essential cython3 \
-        htop zip dos2unix tmuxp xclip \
+        htop zip dos2unix tmuxp xclip ranger \
     && locale-gen en_US en_US.UTF-8 && update-locale LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 \
     && rm -rf /var/lib/apt/lists/* && apt-get clean
 RUN curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key  -o /usr/share/keyrings/ros-archive-keyring.gpg

@@ -1,13 +1,11 @@
 #!/bin/bash
 
-
 # Set up debug
 mkdir -p $HOME/.log
 
-
 # Set up ROS
 mkdir -p $HOME/racecar_ws/src
-/bin/bash -c 'cd $HOME/racecar_ws; colcon build'
+/bin/bash -c 'cd $HOME/racecar_ws; colcon build --symlink-install'
 /bin/bash -c 'mkdir -p $HOME/.rviz2; cp /tmp/default.rviz $HOME/.rviz2'
 
 # Start the VNC server
