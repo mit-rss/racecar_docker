@@ -71,7 +71,7 @@ Then clone and pull the image:
 > and change the image from "staffmitrss/racecar-sim:amd", to "staffmitrss/racecar-sim:arm"
 
 ```
-git clone https://github.com/mit-racecar/racecar_docker.git
+git clone https://github.com/mit-rss/racecar_docker.git
 cd racecar_docker
 docker compose pull
 ```
