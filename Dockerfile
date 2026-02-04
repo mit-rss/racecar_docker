@@ -57,7 +57,7 @@ RUN echo "set bell-style none" >> /etc/inputrc
 
 # Create racecar_ws directory and src before switching to USER
 RUN mkdir -p ${SIM_WS}/src && cd ${SIM_WS}/src && \
-    git clone https://github.com/Sebastian-Garcia/racecar_simulator.git && \
+    git clone https://github.com/mit-rss/racecar_simulator.git && \
     cd ${SIM_WS} && \
     /bin/bash -c 'source /opt/ros/$ROS_DISTRO/setup.bash && colcon build;'
 
