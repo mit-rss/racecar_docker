@@ -14,7 +14,8 @@ RUN apt update && \
 		curl wget gnupg2 lsb-release ca-certificates console-setup \
         python3 python3-pip python3-setuptools locales \
         git unzip build-essential cython3 \
-        htop zip dos2unix tmuxp xclip ranger python-is-python3 \
+        htop zip dos2unix tmuxp xclip ranger python3-venv \
+        python-is-python3 software-properties-common \
     && locale-gen en_US en_US.UTF-8 && update-locale LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 \
     && rm -rf /var/lib/apt/lists/* && apt-get clean
 RUN curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key  -o /usr/share/keyrings/ros-archive-keyring.gpg
@@ -38,11 +39,15 @@ RUN apt update && \
 # Set up ROS2
 RUN rosdep init && rosdep update --include-eol-distros
 
+# Add neovim PPA
+RUN add-apt-repository ppa:neovim-ppa/unstable
+
 # Install VNC and things to install noVNC
 RUN apt update && apt install -y --no-install-recommends \
     tigervnc-standalone-server \
     openbox x11-xserver-utils xterm dbus-x11 \
-    sudo vim emacs nano gedit screen tmux iputils-ping feh 
+    sudo vim emacs nano neovim gedit screen tmux \
+    iputils-ping feh
 
 # Download NoVNC and unpack
 RUN wget -q https://github.com/novnc/noVNC/archive/v${NO_VNC_VERSION}.zip && \
